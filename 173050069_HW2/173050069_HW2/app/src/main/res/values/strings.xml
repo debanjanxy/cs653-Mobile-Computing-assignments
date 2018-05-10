@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">173050069_HW2</string>
+
+    <string-array name="login_activity">
+        <item>Login</item>
+        <item>Sensors</item>
+        <item>Record</item>
+    </string-array>
+
+    <string-array name="sensor_activity">
+        <item>Sensors</item>
+        <item>Login</item>
+        <item>Record</item>
+    </string-array>
+
+    <string-array name="record_activity">
+        <item>Record</item>
+        <item>Login</item>
+        <item>Sensors</item>
+    </string-array>
+
+</resources>

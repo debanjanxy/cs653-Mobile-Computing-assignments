@@ -1,0 +1,9 @@
+Name - Debanjan Das
+Roll - 173050069
+Email - debanjanxy@cse.iitb.ac.in
+
+If the app is being opened for the first time then exit from the app because of proper formation of data folders and allow all the permissions. Then restart the app. 
+
+The train.csv and test.csv will be created and put into a folder named 173050069_HW5. All the files like output model and final output will be generated only inside this folder.
+
+The final output file is named as FINAL_OUTPUT.csv. 

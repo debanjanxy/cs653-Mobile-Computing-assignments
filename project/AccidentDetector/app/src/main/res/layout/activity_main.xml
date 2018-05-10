@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.debanjan.accidentdetector.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Switch
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:layout_marginStart="6dp"
+        android:text="Start  "
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/gps"
+        app:layout_constraintTop_toBottomOf="@+id/gps"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="134dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="219dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="132dp"
+        android:scrollbars="vertical"
+        android:text="Data"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="182dp" />
+
+    <CheckBox
+        android:id="@+id/acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="114dp"
+        android:layout_marginTop="51dp"
+        android:text="Accelerometer"
+        app:layout_constraintBottom_toTopOf="@+id/gps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="51dp" />
+
+    <CheckBox
+        android:id="@+id/gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:text="GPS"
+        app:layout_constraintBottom_toTopOf="@+id/start"
+        app:layout_constraintStart_toStartOf="@+id/acc"
+        app:layout_constraintTop_toBottomOf="@+id/acc"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="83dp" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3dbda"
+    tools:context="com.example.debanjan.a173050069_hw2.MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="100dp"
+        android:background="#646464"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/last_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="70dp"
+            android:background="@android:color/white"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="67dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:onClick="onClickImageButtonMain"
+            app:srcCompat="@android:drawable/ic_notification_overlay"
+            tools:layout_editor_absoluteX="233dp"
+            tools:layout_editor_absoluteY="7dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="59dp"
+        android:layout_height="62dp"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:layout_marginStart="26dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/last_name"
+        app:layout_constraintStart_toEndOf="@+id/imageView2" />
+
+
+    <EditText
+        android:id="@+id/last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/mobile_no"
+        app:layout_constraintStart_toStartOf="@+id/first_name"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/mobile_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:digits="1234567890"
+        android:maxLength="10"
+        android:ems="10"
+        android:hint="Mobile No."
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintStart_toStartOf="@+id/last_name"
+        app:layout_constraintTop_toBottomOf="@+id/last_name" />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_marginBottom="2dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/age"
+        app:layout_constraintStart_toStartOf="@+id/mobile_no"
+        app:layout_constraintTop_toBottomOf="@+id/mobile_no" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="211dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="15dp"
+            android:layout_marginLeft="12dp"/>
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Male"
+            tools:layout_editor_absoluteX="149dp"
+            tools:layout_editor_absoluteY="490dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Female"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="490dp" />
+
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:digits="123"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+
+</android.support.constraint.ConstraintLayout>

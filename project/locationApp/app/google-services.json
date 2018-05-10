@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "948001875305",
+    "firebase_url": "https://livetrack-45c7f.firebaseio.com",
+    "project_id": "livetrack-45c7f",
+    "storage_bucket": "livetrack-45c7f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948001875305:android:3efd748b07c86c4a",
+        "android_client_info": {
+          "package_name": "com.example.deka.locationapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948001875305-ilaiktp849t640o31boegf6sejb9j87a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.deka.locationapp",
+            "certificate_hash": "94b66681f604c9b777ee708d81f834df113f929f"
+          }
+        },
+        {
+          "client_id": "948001875305-u4hug76tro12mgputrsiik9qn7abth0t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQq5rzFeVqhtUZN1xQAlE3hc1XkZPOWu8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948001875305-u4hug76tro12mgputrsiik9qn7abth0t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
